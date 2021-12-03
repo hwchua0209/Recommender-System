@@ -2,7 +2,7 @@
 
 This is a movie recommender system that is based on the following algorithm.
 * Content Based Filtering
-* Item-Based  Collaborative Filtering with SVD
+* Item-Based Collaborative Filtering with SVD
 * Hybrid Recommender - (Content Based + SVD)
 
 This movie recommender is built based on [MovieLens Latest 100k Dataset](https://grouplens.org/datasets/movielens/latest/). 
@@ -52,6 +52,11 @@ In Bruges (2008)
 ```
 ## Files
 
+* [EDA.ipynb](https://github.com/hwchua0209/Recommender-System/blob/master/EDA.ipynb) - Exploratory Data Analysis of the Dataset
+
+* [main.py](https://github.com/hwchua0209/Recommender-System/blob/master/main.py) - Main python file for running of Movie Recommender System
+
+* [recommender.py](https://github.com/hwchua0209/Recommender-System/blob/master/recommender.py) - Code for recommender system class
 
 ## Getting Started
 
