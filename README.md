@@ -67,9 +67,9 @@ These instructions will get you a copy of the project up and running on your loc
 Ensure the correct environment is created
 
 ```
+conda create --name <env>
 conda activate <env>
-conda install pip
-pip freeze > requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Run Recommender
