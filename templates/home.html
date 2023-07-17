@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Recommender System</title>
+</head>
+
+<body>
+    <h1>Movie Recommender System</h1>
+    <form action="http://localhost:9999/" method="post">
+
+        <h3><label for="userid"> Enter an User ID between 1 to 610 : </label></h3>
+        <p>
+            <input type="number" , name="userid" , min="1" , max="610" , style="width: 5em;height: 1em">
+        </p>
+        <p>
+            <button type="submit" style="height:20px;width:80px">Submit</button>
+
+        </p>
+
+    </form>
+
+    <h3><u> Results for user {{ userid }} are as follows</u></h3>
+
+    <p>Examples of movies watched are</p>
+    <ul>
+        {% for movie in movie_user %}
+        <li>
+            {{ movie }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h3><u>Content Filtering</u></h3>
+    <p>Top 5 recommended movies based on content filtering are:</p>
+    <ul>
+        {% for movie in recommendor_cont %}
+        <li>
+            {{ movie }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h3><u>Colaborative Filtering</u></h3>
+    <p>Top 5 recommended movies based on colaborative filtering are:</p>
+    <ul>
+        {% for movie in recommendor_colab %}
+        <li>
+            {{ movie }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h3><u>Hybrid Recommender</u></h3>
+    <p>Top 5 recommended movies based on hybrid recommender are:</p>
+    <ul>
+        {% for movie in recommendor_hybrid %}
+        <li>
+            {{ movie }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
